@@ -13,7 +13,7 @@ The Fake News Classifier is a machine learning-based solution designed to identi
 
 ### **Dataset**
 
-The dataset used for training and testing consists of:
+The [dataset](https://drive.google.com/drive/folders/1Bd-hnI0Z_pmpFO0WCtSYa6cy0rFusMN-?usp=drive_link) used for training and testing consists of:
 
 - *Columns*: title, text, subject, date, label (0 = fake, 1 = real)
 - *Preprocessing Steps*:
@@ -22,7 +22,7 @@ The dataset used for training and testing consists of:
     - Convert to lowercase.
     - Remove non-word characters, punctuation, numbers, HTML tags, URLs, and square bracket content./n
   - Transformed cleaned text into feature vectors using TF-IDF vectorization.
-
+    
 ### **Models and Performance**
 
 |Model	                     |Validation Accuracy|Testing Accuracy|F1-Score (Overall)|
