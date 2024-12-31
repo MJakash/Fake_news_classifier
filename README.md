@@ -4,6 +4,7 @@
 The Fake News Classifier is a machine learning-based solution designed to identify whether a given news article is fake or real based on its textual content. This repository includes the implementation, preprocessing pipeline, and a high-performing classifier using the XGBoost algorithm, along with other baseline models for comparison.
 
 **Features**
+
 *High Accuracy*: Achieves 99% testing accuracy with the XGBoost model.
 *Text Preprocessing*: Robust pipeline for cleaning and vectorizing text.
 *Batch Classification*: Classify multiple news articles at once and export results.
@@ -11,17 +12,20 @@ The Fake News Classifier is a machine learning-based solution designed to identi
 *Evaluation Metrics*: Includes AUC-ROC and classification reports.
 
 **Dataset**
+
 The dataset used for training and testing consists of:
 
 *Columns*: title, text, subject, date, label (0 = fake, 1 = real)
 *Preprocessing Steps*:
 *Dropped columns*: title, subject, date.
 *Text cleaning*:
+
 -Convert to lowercase.
 -Remove non-word characters, punctuation, numbers, HTML tags, URLs, and square bracket content.
 Transformed cleaned text into feature vectors using TF-IDF vectorization.
 
 **Models and Performance**
+
 Model	                   Validation Accuracy	Testing Accuracy	F1-Score (Overall)
 Logistic Regression	             98%	              98%            	0.98
 Decision Tree Classifier	       94%	              94%	            0.94
@@ -30,9 +34,11 @@ Random Forest Classifier	       97%	              97%	            0.97
 XGBoost Classifier	             99%	              99%           	0.99
 
 **AUC-ROC Metrics**
+
 -Training/Validation AUC-ROC: 0.99
 -Testing AUC-ROC: 0.99
 *Insights*:
+
 The XGBoost Classifier consistently outperforms all other models with superior accuracy and AUC scores.
 
 Installation
